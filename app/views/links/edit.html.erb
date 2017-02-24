@@ -1,0 +1,7 @@
+
+  <%= form_tag "/links/#{@link.id}", method: :patch do %>
+  Slug<input type="text" name="slug" value= <%= @link.slug %> >
+  Target Url<input type="text" name="target_url" value= <%= @link.target_url %> >
+
+  <input type="submit" value="Submit">
+  <% end %>
